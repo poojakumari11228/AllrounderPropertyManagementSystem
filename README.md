@@ -31,13 +31,16 @@ Our application provides following new features:
 1.	INTERNET
 
 # Dependencies
+
 // Glide
 implementation 'com.github.bumptech.glide:glide:3.7.0'
+
 // Firebase
 implementation 'com.google.firebase:firebase-core:16.0.6'
 implementation 'com.google.firebase:firebase-auth:16.1.0'
 implementation 'com.google.firebase:firebase-database:16.0.6'
 implementation 'com.google.firebase:firebase-storage:16.0.5'
+
 //Picasso
 implementation 'com.squareup.picasso:picasso:2.5.2'
 
