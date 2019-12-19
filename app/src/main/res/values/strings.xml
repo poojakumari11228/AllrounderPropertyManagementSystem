@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BnB</string>
+    <string name="job_requirement">JOB REQUIREMENT</string>
+    <string name="enter_your_name">Enter Your Name</string>
+</resources>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:context=".AddProperty">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="113dp"
+            android:elevation="20dp"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/ptype_tv"
+            android:layout_width="152dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:padding="5dp"
+            android:text="Property Type*"
+            android:textColor="#1360b6"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/imageView3"
+            tools:layout_editor_absoluteY="127dp" />
+
+        <RadioGroup
+            android:id="@+id/ptype_rg"
+            android:layout_width="331dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/ptype_tv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptype_tv"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/homeRBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Home"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/plotRBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Plot"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/pdetails_tv"
+            android:layout_width="152dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/ptype_rg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:padding="5dp"
+            android:text="Property Details"
+            android:textColor="#1360b6"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptype_rg" />
+
+        <EditText
+            android:id="@+id/ptitle_et"
+            android:layout_width="332dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/pdetails_tv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:hint="Property Title*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdetails_tv"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/pdesc_et"
+            android:layout_width="332dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/pdetails_tv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Property Description*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptitle_et"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/pprice_et"
+            android:layout_width="332dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/pdesc_et"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="Price*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdesc_et"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/parea_et"
+            android:layout_width="332dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/pdetails_tv"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:hint="Area*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pprice_et"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/pcontact_tv"
+            android:layout_width="152dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/ptype_rg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:text="Contact Details"
+            android:textColor="#1360b6"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parea_et" />
+
+        <EditText
+            android:id="@+id/p_email_et"
+            android:layout_width="334dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pcontact_tv" />
+
+        <EditText
+            android:id="@+id/p_phone_et"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Phone*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p_email_et" />
+
+        <TextView
+            android:id="@+id/pimages_tv"
+            android:layout_width="272dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/ptype_rg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:text="Images"
+            android:textColor="#1360b6"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p_phone_et" />
+
+        <Button
+            android:id="@+id/pimagesadd_bt"
+            android:layout_width="65dp"
+            android:layout_height="37dp"
+            android:background="@drawable/upload_portfolio"
+            app:layout_constraintStart_toEndOf="@+id/pimages_tv"
+            app:layout_constraintTop_toBottomOf="@+id/p_phone_et" />
+
+
+        <HorizontalScrollView
+            android:layout_width="328dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pimages_tv">
+
+            <GridLayout
+                android:id="@+id/images_Glayout"
+                android:layout_width="363dp"
+                android:layout_height="154dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:scrollbars="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+            </GridLayout>
+        </HorizontalScrollView>
+
+
+        <Button
+            android:id="@+id/addProp_bt"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/create_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

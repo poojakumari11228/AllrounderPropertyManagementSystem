@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:elevation="30dp">
+
+    <ImageView
+        android:id="@+id/list_add_mv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:elevation="20dp"
+        android:src="@drawable/common_google_signin_btn_text_light_normal_background"
+        />
+
+    <TextView
+        android:id="@+id/list_add_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="name"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1360b6"/>
+    
+</LinearLayout>
