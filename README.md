@@ -1,6 +1,6 @@
 # Allrounder-Property-Management-System IEEEmadC Mobile Application Development Contest
 
-world is growing day by day and everything is being transformed into technology. There are so many projects which have been established on property management systems. The idea is to develop an android application to provide multiple facilities of buying, selling and renting of houses and plots from minimum to maximum rates at one platform, keeping in mind about the data security of buyers and sellers. Meanwhile, the end user will be facilitated by designers and architects according to their needs and demands. This whole process and data transaction will be handled by the manager of Allrounder and is responsible for the secure and authenticate interaction between both parties.
+World is growing day by day and everything is being transformed into technology. There are so many projects which have been established on property management systems. The idea is to develop an android application to provide multiple facilities of buying, selling and renting of houses and plots from minimum to maximum rates at one platform, keeping in mind about the data security of buyers and sellers. Meanwhile, the end user will be facilitated by designers and architects according to their needs and demands. This whole process and data transaction will be handled by the manager of Allrounder and is responsible for the secure and authenticate interaction between both parties.
 
 ![cover](https://user-images.githubusercontent.com/35136890/71212745-bd718a00-22d3-11ea-9afc-cc2742667d8c.PNG)
 
@@ -34,18 +34,21 @@ Our application provides following new features:
 
 // Glide
 
-implementation 'com.github.bumptech.glide:glide:3.7.0'
+- implementation 'com.github.bumptech.glide:glide:3.7.0'
 
 // Firebase
 
-implementation 'com.google.firebase:firebase-core:16.0.6'
-implementation 'com.google.firebase:firebase-auth:16.1.0'
-implementation 'com.google.firebase:firebase-database:16.0.6'
-implementation 'com.google.firebase:firebase-storage:16.0.5'
+- implementation 'com.google.firebase:firebase-core:16.0.6'
+
+- implementation 'com.google.firebase:firebase-auth:16.1.0'
+
+- implementation 'com.google.firebase:firebase-database:16.0.6'
+
+- implementation 'com.google.firebase:firebase-storage:16.0.5'
 
 //Picasso
 
-implementation 'com.squareup.picasso:picasso:2.5.2'
+- implementation 'com.squareup.picasso:picasso:2.5.2'
 
 # Plug in
 
@@ -61,12 +64,12 @@ apply plugin: 'com.google.gms.google-services'
 
 
 # Live View
-[Allrounder Property Management System]()
+[Allrounder Property Management System](https://youtu.be/sOjuVCm4vpw)
 
 # The coderBoost++ Team
 Allrounder Property Management System is the collaborative effort of the members of coderBoost++ Bhagia Sheri [bhagiasheri24@gmail.com](url) and PoojaKumari11228 [poojakumari11228@gmail.com](url). We used to analyze real world problems and solve them through software. Therefore, we came up with an idea to make mobile app for them and worked as developer and designer as well.
 # License
-[Apache-2.0](https://github.com/poojakumari11228/AllrounderPropertyManagementSystem/compare/master...add-license-1?quick_pull=1)
+[Apache-2.0](https://github.com/poojakumari11228/AllrounderPropertyManagementSystem/blob/master/LICENSE)
 # Table
 
 | Executable  | Repository | Team | Description	| Licence | Location | Team Members|
